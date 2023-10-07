@@ -44,7 +44,7 @@ def card(id):
     #Задание №2. Отоброзить нужную карточку по id
     card = Card.query.get(id)
 
-шш
+
     return render_template('card.html', card=card)
 
 #Запуск страницы c созданием карты
