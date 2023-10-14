@@ -4,11 +4,11 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #0F172A;        /* цвет зоны отслеживания */
+    background: #10224b;        /* цвет зоны отслеживания */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: rgba(30, 41, 59, 0.4);    /* цвет бегунка */
+    background-color: rgba(10, 66, 155, 0.4);    /* цвет бегунка */
     border-radius: 20px;       /* округлось бегунка */
     border: none;
   }
@@ -22,8 +22,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    background-color: #0F172A;
-    color: #F8FAFC;
+    background-color: #132f6e;
+    color: #a2cbf5;
 }
 
 h1, h2, p {
@@ -38,6 +38,7 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    transition: 0.2s;
 }
 
 ul {
@@ -81,9 +82,9 @@ ul {
     width: 350px;
     height: 500px;
     transition: 0.2s;
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(21, 76, 163, 0.4);
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(44, 6, 6, 0.74);
 
 }
 
@@ -96,7 +97,7 @@ ul {
 }
 
 .card__text {
-    border-top: 1px solid rgba(14, 165, 233, 1);
+    border-top: 1px solid rgb(78, 185, 235);
     width: inherit;
     display: flex;
     padding: 50px 0 20px;
@@ -252,4 +253,44 @@ ul {
 .main__link:hover {
     color: #F8FAFC;
     background:  rgba(14, 165, 233, 1);
+}
+
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 30%;
+    padding: 50px 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.login label {
+    width: 60%;
+}
+
+
+.reg__link {
+    height: fit-content;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.error {
+    font-size: 10px;
+    color: #fff;
+}
+
+.login__link:hover {
+    color: rgba(14, 165, 233, 1);
 }
